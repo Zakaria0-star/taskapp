@@ -27,7 +27,7 @@ const Column: React.FC<ColumnProps> = ({ column, tasks, onAddTask }) => {
   return (
     <div className={`flex flex-col rounded-lg shadow-sm ${getColumnStyle(column.id)} border min-h-[500px] w-full md:w-[300px] lg:w-[320px]`}>
       <div className="p-3 border-b border-gray-200 flex items-center justify-between">
-        <h2 className="font-semibold text-gray-800">{column.title}</h2>
+        <h2 className="font-semibold text-black-800">{column.title}</h2>
         <div className="flex items-center">
           <span className="bg-white text-gray-600 text-xs font-medium rounded-full px-2 py-0.5 mr-2">
             {tasks.length}
@@ -43,15 +43,14 @@ const Column: React.FC<ColumnProps> = ({ column, tasks, onAddTask }) => {
           )}
         </div>
       </div>
-      
+
       <Droppable droppableId={column.id}>
         {(provided, snapshot) => (
           <div
             ref={provided.innerRef}
             {...provided.droppableProps}
-            className={`flex-grow p-3 overflow-y-auto transition-colors ${
-              snapshot.isDraggingOver ? 'bg-indigo-50/50' : ''
-            }`}
+            className={`flex-grow p-3 overflow-y-auto transition-colors ${snapshot.isDraggingOver ? 'bg-indigo-50/50' : ''
+              }`}
             style={{ minHeight: '100px' }}
           >
             {tasks.map((task, index) => (
