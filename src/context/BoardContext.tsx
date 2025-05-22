@@ -227,7 +227,7 @@ export const BoardProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     let priority: Priority = 'medium';
     const lowPriorityKeywords = ['someday', 'eventually', 'when possible', 'low priority'];
     const highPriorityKeywords = ['urgent', 'asap', 'immediately', 'critical', 'important'];
-    
+
     if (lowPriorityKeywords.some(keyword => description.toLowerCase().includes(keyword))) {
       priority = 'low';
     } else if (highPriorityKeywords.some(keyword => description.toLowerCase().includes(keyword))) {

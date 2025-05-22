@@ -46,7 +46,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onClose }) => {
 
   const handleSuggestFromAI = async () => {
     if (!formData.description) return;
-    
+
     setIsLoading(true);
     try {
       const suggestion = await suggestTaskInfo(formData.description);
@@ -64,7 +64,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.title.trim() || !formData.deadline) {
       alert('Please fill in all required fields');
@@ -189,7 +189,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onClose }) => {
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
             >
               <option value="low">Low</option>
-              <option value="medium">Medium</option>
+              <option value="medium">chafai</option>
               <option value="high">High</option>
             </select>
           </div>
