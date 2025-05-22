@@ -96,7 +96,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onClose }) => {
     <div className="bg-white rounded-lg shadow-lg border border-gray-200 p-4 mb-3">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-medium text-gray-900">
-          {task ? 'Edit Task' : 'Create New Task'}
+          {task ? 'Edit Task' : 'Create New ask'}
         </h3>
         <button
           onClick={onClose}
