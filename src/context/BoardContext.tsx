@@ -21,7 +21,7 @@ const initialState: BoardState = {
     },
     inProgress: {
       id: 'inProgress',
-      title: 'In Progress',
+      title: 'In chafai',
       taskIds: [],
     },
     completed: {
