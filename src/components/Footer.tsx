@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="mb-2 md:mb-0">
             <p>© {new Date().getFullYear()} TaskBoard AI. All rights reserved.</p>
           </div>
-          
+
           <div className="flex items-center">
             <a
               href="#"
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               href="#"
               className="text-gray-500 hover:text-gray-900 transition-colors"
             >
-              Terms
+              said wahid
             </a>
           </div>
         </div>
